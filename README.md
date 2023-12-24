@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/hV6KSfD.png" alt="Logo"/>
+<img src="https://i.imgur.com/Vh87N7q.png" alt="Logo"/>
 </p>
 
 <h1 align="center">Network File Shares And Permissions</h1>
