@@ -1,8 +1,7 @@
 <p align="center">
-
-![Screen Shot 2023-12-24 at 3 35 37 AM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/68661246-4eef-42d8-864c-adad3b33c7a5)
-
+<img src="https://i.imgur.com/iIGaiEo.png" alt="Logo"/>
 </p>
+
 
 # Network File Shares And Permissions
 
