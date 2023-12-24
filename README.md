@@ -1,6 +1,6 @@
 <p align="center">
 
-![Screen Shot 2023-12-24 at 1 24 49 AM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ba5d9904-5765-49e9-aeef-bbebaf4035c2)
+![Screen Shot 2023-12-24 at 3 35 37 AM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/68661246-4eef-42d8-864c-adad3b33c7a5)
 
 </p>
 
