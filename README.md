@@ -4,7 +4,7 @@
 
 </p>
 
-# Network-File-Shares-And-Permissions
+# Network File Shares And Permissions
 
 This demonstration will walk you through the process of setting up Network File Shares and Permissions using Windows Server and Active Directory. 
 
