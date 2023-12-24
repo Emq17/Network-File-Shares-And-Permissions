@@ -2,15 +2,14 @@
 <img src="https://i.imgur.com/hV6KSfD.png" alt="Logo"/>
 </p>
 
-
-# Network File Shares And Permissions
+<h1 align="center">Network File Shares And Permissions</h1>
 
 This demonstration will walk you through the process of setting up Network File Shares and Permissions using Windows Server and Active Directory. 
 
 >**Note***
 The following uses material in my previous demonstration: ["Configuring On-Premises Active Directory Within Azure VM's"](https://github.com/Emq17/Configuring-On-premises-Active-Directory-within-Azure-VMs)
 
-<h2>Overview</h2>
+<h2>Overview (What We Will Be Doing)</h2>
 
 - Talk about file shares (what, when, where, why, and how)
 - Create and test some file shares
