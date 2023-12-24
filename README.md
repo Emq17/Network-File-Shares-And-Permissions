@@ -6,31 +6,37 @@
 
 # Network-File-Shares-And-Permissions
 
-This Tutorial will guide you through the process of setting up Network File Shares and Permissions using Windows Server and Active Directory. 
+This demonstration will walk you through the process of setting up Network File Shares and Permissions using Windows Server and Active Directory. 
 
 >**Note***
->_The following uses material created in the previous demonstration, ["On-premises Active Directory Deployed in the Cloud (Azure)"](https://github.com/CarlosAlvarado0718/Configure-AD)._
+The following uses material in my previous demonstration: ["Configuring On-Premises Active Directory Within Azure VM's"](https://github.com/Emq17/Configuring-On-premises-Active-Directory-within-Azure-VMs)
 
-<h2>Environments and Technologies Used</h2>
+<h2>Overview</h2>
 
-- Microsoft Azure
+- Talk about file shares (what, when, where, why, and how)
+- Create and test some file shares
+- Talk about Security Groups (Windows and Active Directory)
+- Create and test some Security Groups
+- Clean up resources
+
+<h2>Environments and Technologies</h2>
+
 - Microsoft Azure Virtual Machines
-- Remote Desktop
+- Microsoft Remote Desktop
 - Active Directory Domain Services
 
-<h2>Operating Systems Used </h2>
+<h2>Operating Systems</h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 10 (22H2)
 
-<h2>List of Prerequisites</h2>
+<h2>Prerequisites</h2>
 
-- Windows Server Installed and Configured
-- Active Directory Set up
-- Two Virtual Machines connected to the Domain
+- Windows Server installed and configured
+- Active Directory Domain 
+- Two Virtual Client Machines connected to the Domain
 - Administrative access to Server and Clients
 
----
 <h2>Creating Files Shares with Various Permissions</h2>
 
 - Return to DC-1 as **jane_admin**
