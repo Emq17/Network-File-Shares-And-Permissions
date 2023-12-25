@@ -42,19 +42,21 @@ https://github.com/Emq17/Configuring-On-premises-Active-Directory-within-Azure-V
 
 <h2>Creating Files Shares with Various Permissions</h2>
 
-
 What are file shares? - File shares are basically folders on your desktop but instead of just being on your desktop its shared out to the rest of your network or organization. 
 
-- Return to DC-1 as **jane_admin**
+- Sign into DC-1 as your domain admin account (jane_admin)
 - On the Top Right Header, Select `Tools`
 - Select `Active Directory Users and Computers`
+
+![Screen Shot 2023-12-25 at 6 11 33 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/99b50d18-9af2-4a6a-99b0-37a9285ac7ce)
+
 - Expand `mydomain.com`
 - Select `_EMPLOYEES`
-- Copy any User from the list (EX. i'll be using xen.dec)
+- Copy any User from the list (I will be using "dox.kena")
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/2f00a0d7-9722-4868-8243-2a2c57e66333)
+![Screen Shot 2023-12-25 at 6 13 49 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/1d9167ba-9037-4f9f-bf68-3e08a04c8db5)
 
-- Log into Client-01 with your User
+- Log into Client-01 with your User of choice
 
 ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/9608783a-811a-426f-9f78-54c196d8f77d)
 
