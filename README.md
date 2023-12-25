@@ -11,6 +11,8 @@ The following uses material in my previous demonstration: ["Configuring On-Premi
 
 <h2>Overview (What We Will Be Doing)</h2>
 
+![Screen Shot 2023-12-25 at 5 43 08 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/fe2745ed-7111-4188-826b-121745a4a20e)
+
 - Talk about file shares (what, when, where, why, and how)
 - Create and test some file shares
 - Talk about Security Groups (Windows and Active Directory)
@@ -22,20 +24,26 @@ The following uses material in my previous demonstration: ["Configuring On-Premi
 - Microsoft Azure Virtual Machines
 - Microsoft Remote Desktop
 - Active Directory Domain Services
-
-<h2>Operating Systems</h2>
-
 - Windows Server 2022
 - Windows 10 (22H2)
 
 <h2>Prerequisites</h2>
 
 - Windows Server installed and configured
-- Active Directory Domain 
+- Active Directory Domain
 - Two Virtual Client Machines connected to the Domain
 - Administrative access to Server and Clients
+  
+Essentially the same set up from my earlier walkthrough: <br>
+https://github.com/Emq17/Configuring-On-premises-Active-Directory-within-Azure-VMs <br>
+
+1. Active Directory running in Azure on a virutal machine (DC-1) <br>
+2. A Client machine running in Azure on a virtual machine (Client-1) and joined to the domain
 
 <h2>Creating Files Shares with Various Permissions</h2>
+
+
+What are file shares? - File shares are basically folders on your desktop but instead of just being on your desktop its shared out to the rest of your network or organization. 
 
 - Return to DC-1 as **jane_admin**
 - On the Top Right Header, Select `Tools`
