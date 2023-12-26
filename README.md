@@ -155,11 +155,13 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 
 ![Screen Shot 2023-12-25 at 8 21 25 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ccc3aa01-ee31-4549-b0c9-c7cb25ed4407)
 
-- Even though you can open the file and read it, remember that you are still not able to create a file for yourself due it having "read" only permissions
+- Even though you can open the file and read it, remember that you are still not able to create a file for yourself due to having "read" only permissions
+
+![Screen Shot 2023-12-25 at 9 39 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/600cb0a0-9bff-45d1-b4c6-0f1f180792d3)
 
 ![Screen Shot 2023-12-25 at 8 20 40 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/62f92dac-3446-4e5f-a833-2d8575e04766)
 
-- This should ultimately provide you a fundamental understanding of how file permissions now operate.
+- This demonstration should provide you a fundamental understanding of how file permissions now operate
 
 <h2>Creating a Security Group</h2>
 
