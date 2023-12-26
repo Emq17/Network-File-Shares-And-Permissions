@@ -132,7 +132,7 @@ Because we gave the "read-access" folder access to "Read" only permissions, we s
 
 ![Screen Shot 2023-12-25 at 7 45 54 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/a66434c5-1bb0-4a6a-a839-2838862bd1cc)
 
-Because we gave the "write-access" folder access to "Read/Write" permissions, we should actually be able to create a file in here actually
+Because we gave the "write-access" folder access to "Read/Write" permissions, we should be able to open it and also create a new file within it with no problems
 
 - Select `write-access`
 - Right click and select `New`
