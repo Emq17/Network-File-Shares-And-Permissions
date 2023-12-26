@@ -211,8 +211,8 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 
 <h2>Changing User's Permissions</h2>
 
-- Return to Client-01
-- Go back to your File Explorer
+- Now return back to Client-01
+- Go to your File Explorer
 - Type in "\\dc-1 at the top
 - Attempt to access the `accounting` folder
 - Observe that the user does not have permission to access the folder (due to the fact that "dox.kena" is not in that security group)
