@@ -121,7 +121,7 @@ Because we gave the "no-access" folder access to only Domain Admins, we should n
 
 ![Screen Shot 2023-12-25 at 7 37 20 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/da886c99-c79c-495b-8b4d-4df0ca4a0bb8)
 
-Because we gave the "read-access" folder access to "Read" only permissions, we shouldn't be able to create a file in here
+Because we gave the "read-access" folder access to "Read" only permissions, we should be able to open it but not create a new file
 
 - Select `read-access`
 - Right Click and Select `New`
