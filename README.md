@@ -257,7 +257,7 @@ In order to give ourselves access to this, we need to add whoever our user is (d
 
 ![Screen Shot 2023-12-25 at 9 20 35 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ff6aa745-7d78-4104-9061-62dd8fe9a1d1)
 
-- As you can see, after having the appropriate permissions applied, we are now finally able to have access within the folder while also being able to read and write in it too
+- Now that the necessary permissions have been applied, we can see that we have gained access and are also able to read and write within it
 
 ![Screen Shot 2023-12-25 at 9 20 56 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/cb6965b2-c420-43be-a73c-61227ad57513)
 
