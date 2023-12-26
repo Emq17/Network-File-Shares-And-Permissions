@@ -140,9 +140,7 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 - Right click and select `New`
 - Select `Text Document`
 - Type in anything
-- Hit `Save` Button 
-
-![Screen Shot 2023-12-25 at 7 50 08 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/f0bdb5c1-35b2-42c6-aa19-350c2a4014e2)
+- Hit `Save`
 
 ![Screen Shot 2023-12-25 at 8 01 06 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/07f19128-f878-43aa-ac36-bd697c22b0f2)
 
@@ -150,17 +148,20 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 
 ![Screen Shot 2023-12-25 at 8 08 25 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/a8fabdc0-05e7-461d-b1b6-d990571e1f68)
 
-- If we go back to DC-1 and create a new Text Document file in the "read-access" folder
+- Now just for fun, lets go back to DC-1 and create a new Text Document file in the "read-access" folder
+- I named mine "You can only read me..."
 
 ![Screen Shot 2023-12-25 at 8 19 15 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/2ea34707-d0dd-4888-beab-05fc0b4548de)
 
-- You can see how on Client-1 the new folder inside of "read-access" was created and you're able to open it but still not able to create a file for yourself
+- Go back to Client-1's connection and observe the new folder inside of "read-access" and that you're able to open it.
 
 ![Screen Shot 2023-12-25 at 8 21 25 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ccc3aa01-ee31-4549-b0c9-c7cb25ed4407)
 
+- Even though you can open the file and read it, remember that you are still not able to create a file for yourself due it having "read" only permissions
+
 ![Screen Shot 2023-12-25 at 8 20 40 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/62f92dac-3446-4e5f-a833-2d8575e04766)
 
-- This should provide you a solid understanding of how file permissions function.
+- This should ultimately provide you a fundamental understanding of how file permissions now operate.
 
 <h2>Creating a Security Group</h2>
 
