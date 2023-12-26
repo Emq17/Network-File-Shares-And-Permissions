@@ -248,7 +248,7 @@ In order to give ourselves access to this, we need to add whoever our user is (d
 ![Screen Shot 2023-12-25 at 9 14 53 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/9f35a543-9422-415e-a693-f233c15b91d7)
 
 - Go to the accounting folder
-- Instead of opening up file explorer, a fancier way of getting there quicker is (if you're on mac) to hit `Command` + `R`
+- Instead of opening up file explorer, a fancier way of getting there quicker is (if you're on mac) to hit `Command` + `R` or `Windows` + `R` (if you're running windows) 
 - Then type in "\\dc-1"
 
 ![Screen Shot 2023-12-25 at 9 17 12 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/1f2805e4-577c-4572-bab3-f17035f62408)
