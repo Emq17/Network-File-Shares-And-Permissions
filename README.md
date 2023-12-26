@@ -215,25 +215,28 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 - Go back to your File Explorer
 - Type in "\\dc-1 at the top
 - Attempt to access the `accounting` folder
-- Observe that the user does not have permission to access the folder (due to the fact that "dox.kena" is not in that security group, we just simply won't have access to it)
+- Observe that the user does not have permission to access the folder (due to the fact that "dox.kena" is not in that security group)
 
 ![Screen Shot 2023-12-25 at 8 54 45 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/f9e0b583-306d-4972-aa71-c49b827effa3)
 
-- Return to DC-1
-- Select `Properties` of the `ACCOUNTANTS` group
-- Click `Members`
-- Select `Add`
+In order to give ourselves access to this, we need to add whoever our user is (dox.kena) and make this person a member of the accountants security group
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/4cbbc3f5-dc5a-4bbd-b2c5-07327846f7b7)
+- Return back to DC-1's `_SECURITY_GROUPS`
+- Double click on `ACCOUNTANTS`
 
-- Type in <your user> (EX. xen.dec)
+![Screen Shot 2023-12-25 at 9 02 35 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/43c875a1-4f0a-451a-ad65-a89b891022a9)
+
+- Click the `Members` tab up top
+- Then select `Add`
+
+![Screen Shot 2023-12-25 at 9 06 04 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/608102ec-e9f2-46ce-9837-78c990552e97)
+
+- Type in user's name (dox.kena)
 - Select `Check Names`
-- Select `OK`
+- Select `OK`, `Apply`, then `OK`
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/99781a0d-5c93-4be3-8471-4d7fbae93bbb)
+![Screen Shot 2023-12-25 at 9 07 43 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/2c95b393-aeb7-4ece-8d67-c90d8c2f81fe)
 
-- Select `Apply`
-- Select `OK`
 - Restart Client-01
 - Login to <your user> (EX: xen.dec)
 - Go to the accounting folder
