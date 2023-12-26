@@ -237,12 +237,29 @@ In order to give ourselves access to this, we need to add whoever our user is (d
 
 ![Screen Shot 2023-12-25 at 9 07 43 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/2c95b393-aeb7-4ece-8d67-c90d8c2f81fe)
 
-- Restart Client-01
-- Login to <your user> (EX: xen.dec)
+- As you can see if we go back to Client-1 we still do not have permissions for it
+- All we have to do now is log out of our remote desktop connection to restart everything
+- Usually your permissions get assigned to your users at log in time
+
+![Screen Shot 2023-12-25 at 9 10 27 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/95b1ab7b-1433-4dcb-b785-3ebbc40b1a10)
+
+- After logging off, log back in to your user again for Client-1's remote desktop connection
+
+![Screen Shot 2023-12-25 at 9 14 53 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/9f35a543-9422-415e-a693-f233c15b91d7)
+
 - Go to the accounting folder
+- Instead of opening up file explorer, a fancier way of getting there quicker is (if you're on mac) to hit `Command` + `R`
+- Then type in "\\dc-1"
+
+![Screen Shot 2023-12-25 at 9 17 12 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/1f2805e4-577c-4572-bab3-f17035f62408)
+
 - Select the `accounting` folder
-- You are now able to read and write in the Accounting Folder!!
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/97ba878d-a714-4a59-86fd-6c1276c16f18)
+![Screen Shot 2023-12-25 at 9 20 35 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ff6aa745-7d78-4104-9061-62dd8fe9a1d1)
 
-<h1>ALL DONE!!! CONGRATS!!!</h1>
+- As you can see, after having the appropriate permissions applied, we are now finally able to have access within the folder while also being able to read and write in it too
+
+![Screen Shot 2023-12-25 at 9 20 56 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/cb6965b2-c420-43be-a73c-61227ad57513)
+
+- If you've made it this far, thank you for sticking around to the end of this walkthrough
+- I hope I was able to demonstrate a thorough understanding of how overall Network File Shares and Permissions work
