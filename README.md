@@ -66,7 +66,7 @@ What are file shares? - File shares are basically folders on your desktop but in
 - Select `This PC`
 - Select `Windows (C;)`
 - Right Click inside the container and Select `New`
-- Select `Folder` and Create Four Folders
+- Select `Folder` and create four new folders
     - read-access
     - write-access
     - no-access
