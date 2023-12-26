@@ -76,7 +76,7 @@ What are file shares? - File shares are basically folders on your desktop but in
 
 
 - Right Click "read-access"
-- Select `Properties` on drop down menu
+- Select `Properties` on the drop down menu
 - Select `Sharing` tab
 - Select `Share`
 
@@ -89,8 +89,6 @@ What are file shares? - File shares are basically folders on your desktop but in
 
 ![Screen Shot 2023-12-25 at 6 45 53 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/669473d1-7099-4114-9529-bec2a22cff81)
 
-- Select `Done`
-- Select `Close`
 - Repeat these steps again for the next folder "Write Access"
     - Set `Permission Level` to "Read/Write"
 
