@@ -261,5 +261,9 @@ In order to give ourselves access to this, we need to add whoever our user is (d
 
 ![Screen Shot 2023-12-25 at 9 20 56 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/cb6965b2-c420-43be-a73c-61227ad57513)
 
+![Screen Shot 2023-12-25 at 9 54 42 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/b1c11d6e-2477-459a-b613-f357c3c910cd)
+
+![Screen Shot 2023-12-25 at 9 56 49 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/5ac2fef4-6e6a-4c74-9395-dd4860cf40eb)
+
 - If you've made it this far, thank you for sticking around to the end of this walkthrough
 - I hope I was able to demonstrate a thorough understanding of how overall Network File Shares and Permissions work
