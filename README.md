@@ -53,12 +53,13 @@ What are file shares? - File shares are basically folders on your desktop but in
 - Expand `mydomain.com`
 - Select `_EMPLOYEES`
 - Copy any User from the list (I will be using "dox.kena")
+  - Remember that this list was produced by the PowerShell Script from the previous walkthrough using the Password: Password1
 
 ![Screen Shot 2023-12-25 at 6 13 49 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/1d9167ba-9037-4f9f-bf68-3e08a04c8db5)
 
-- Log into Client-01 with your User of choice
+- Log into Client-01 with your user of choice
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/9608783a-811a-426f-9f78-54c196d8f77d)
+![Screen Shot 2023-12-25 at 6 16 02 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/3b0bc7ed-d035-4917-8365-ad5a52659c98)
 
 - Return to DC-1
 - Open `File Explorer`
@@ -66,76 +67,104 @@ What are file shares? - File shares are basically folders on your desktop but in
 - Select `Windows (C;)`
 - Right Click inside the container and Select `New`
 - Select `Folder` and Create Four Folders
-    - One named **read-access**
-    - One named **write-access**
-    - One named **no-access**
-    - One named **accounting**
+    - read-access
+    - write-access
+    - no-access
+    - accounting
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/57234b1e-b599-462f-acae-f6177ff814d1)
+![Screen Shot 2023-12-25 at 6 38 49 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/9a8fbe0a-12e0-46fd-a55d-3a71bebf514f)
 
-- Right Click **read-access**
-- Select `Properties`
-- Select `Sharing`
+
+- Right Click "read-access"
+- Select `Properties` on drop down menu
+- Select `Sharing` tab
 - Select `Share`
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/8996c525-0faa-4082-b978-1ee62ec29c3d)
+![Screen Shot 2023-12-25 at 6 43 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/22b04351-d275-4097-a16c-90848fa08bd5)
 
-- Type **domain users**
+- Type "Domain Users"
 - Select `Add`
-- Set `Permission Level` at **Read**
+- Set `Permission Level` to "Read"
 - Select `Share`
 
-  ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/83cf8f34-e201-4956-a648-23c265a0e5c5)
+![Screen Shot 2023-12-25 at 6 45 53 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/669473d1-7099-4114-9529-bec2a22cff81)
 
 - Select `Done`
 - Select `Close`
-- Repeat these steps again for the next two Folders (Write Access and No Access)
-    - For Write Access, Set `Permission Level` to **Read/Write**
+- Repeat these steps again for the next folder "Write Access"
+    - Set `Permission Level` to "Read/Write"
 
-      ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/fb792019-936c-4f18-8f05-c33827f7ac8d)
+![Screen Shot 2023-12-25 at 6 47 57 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/3fc2cf90-d0a6-4f2f-af1a-80f6106a36c6)
 
-    - For No Access, Type **Domain Admins** and Select `Add`
-    - Set `Permission Level` to **Read/Write**
+- Do the same for "no-access" but
+- Type "Domain Admins" and Select `Add`
+- Set `Permission Level` to "Read/Write"
 
-      ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/7886c96c-91c1-43a1-8a54-5c2999223539)
+![Screen Shot 2023-12-25 at 7 18 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/d5a7feb9-6a2d-4f45-96f7-71b5d66a4368)
 
 - Skip Accounting Folder for now
 
 <h2>Attempting to Access File Shares as a Normal User</h2>
 
-- Return to Client-01
+- Return to Client-1's remote desktop connection
 - Open `File Explorer`
-- Type **\\\dc-1** into Search Bar
+- Type "\\\dc-1" into Search Bar up top
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/3f655df3-79e1-4f4f-b5ab-78201aac3fed)
+![Screen Shot 2023-12-25 at 7 43 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/4d6a14e9-c1d3-4943-ad30-b7ed2d884c94)
 
 - Now you have access to every folder made before
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/de2b2cfe-5aaa-4b9e-945a-c55c3ed32cbb)
+![Screen Shot 2023-12-25 at 7 33 02 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/9abf0fd5-07a3-49e2-a044-e65457699079)
+
+Because we gave the "no-access" folder access to only Domain Admins, we should not be able to open this file
 
 - Select `no-access`
-- You will see it fails access
+- You will see it fails
 
-    ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/1d955e24-d745-40ba-a490-b1a1c1dbb2f9)
+![Screen Shot 2023-12-25 at 7 37 20 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/da886c99-c79c-495b-8b4d-4df0ca4a0bb8)
+
+Because we gave the "read-access" folder access to "Read" only permissions, we shouldn't be able to create a file in here
 
 - Select `read-access`
 - Right Click and Select `New`
 - Select `Rich Text Document` (RTF)
 - You will see it fails to create the file
 
-    ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/fe889214-4b73-4ca0-b320-6e54239f6342)
+![Screen Shot 2023-12-25 at 7 26 14 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/203e31b3-ad4d-44e7-ac92-37d43427067e)
+
+![Screen Shot 2023-12-25 at 7 45 54 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/a66434c5-1bb0-4a6a-a839-2838862bd1cc)
+
+Because we gave the "write-access" folder access to "Read/Write" permissions, we should actually be able to create a file in here actually
 
 - Select `write-access`
-- Right Click and Select `New`
-- Select `Rich Text Document` (RTF)
-- Type **Hello World**
-- Hit `Enter` Button
+- Right click and select `New`
+- Select `Text Document`
+- Type in anything
+- Hit `Save` Button 
 
-    ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/8cd14fee-8a30-49f8-a3c1-e2afd2cac759)
+![Screen Shot 2023-12-25 at 7 50 08 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/f0bdb5c1-35b2-42c6-aa19-350c2a4014e2)
+
+![Screen Shot 2023-12-25 at 8 01 06 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/07f19128-f878-43aa-ac36-bd697c22b0f2)
+
+- As you can see the new file is successfully created
+
+![Screen Shot 2023-12-25 at 8 08 25 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/a8fabdc0-05e7-461d-b1b6-d990571e1f68)
+
+- If we go back to DC-1 and create a new Text Document file in the "read-access" folder
+
+![Screen Shot 2023-12-25 at 8 19 15 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/2ea34707-d0dd-4888-beab-05fc0b4548de)
+
+- You can see how on Client-1 the new folder inside of "read-access" was created and you're able to open it but still not able to create a file for yourself
+
+![Screen Shot 2023-12-25 at 8 21 25 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/ccc3aa01-ee31-4549-b0c9-c7cb25ed4407)
+
+![Screen Shot 2023-12-25 at 8 20 40 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/62f92dac-3446-4e5f-a833-2d8575e04766)
+
+- This should provide you a solid understanding of how file permissions function.
 
 <h2>Creating a Security Group</h2>
 
-- Go to DC-1
+- Go back to DC-1
 - On the Top Right Header, Select `Tools`
 - Select `Active Directory Users and Computers`
 - Expand `mydomain.com`
