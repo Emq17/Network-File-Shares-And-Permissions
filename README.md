@@ -11,7 +11,7 @@ The following uses material in my previous demonstration: ["Configuring On-Premi
 
 <h2>Overview (What We Will Be Doing)</h2>
 
-![Screen Shot 2023-12-25 at 5 43 08 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/fe2745ed-7111-4188-826b-121745a4a20e)
+![Screen Shot 2023-12-25 at 8 37 17 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/cb3a2dd1-4067-4bcb-809f-5a1f833d635f)
 
 - Talk about file shares (what, when, where, why, and how)
 - Create and test some file shares
@@ -165,46 +165,59 @@ Because we gave the "write-access" folder access to "Read/Write" permissions, we
 
 <h2>Creating a Security Group</h2>
 
-- Go back to DC-1
-- On the Top Right Header, Select `Tools`
-- Select `Active Directory Users and Computers`
-- Expand `mydomain.com`
+- Go back to DC-1's Active Directory
 - Right Click `mydomain.com`
 - Select `New`
 - Select `Organizational Unit`
-- Set `Name` to **_SECURITY_GROUPS**
+- Set `Name` to "_SECURITY_GROUPS" just to keep things organized
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/dd46a511-38b5-4984-ae0f-d1181d45bbd2)
+![Screen Shot 2023-12-25 at 8 39 23 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/3ecd6559-4f24-480c-a2a3-5d593aced25f)
 
+![Screen Shot 2023-12-25 at 8 39 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/0ce1e395-3514-482e-989e-c8f5c4b709b9)
 
-- Right Click Security Groups
-- Select `Group`
-- Set 'Group name` to **ACCOUNTANTS**
+- Refresh `mydomain.com`
+
+![Screen Shot 2023-12-25 at 8 40 30 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/5b055bb7-6bdb-413d-85ab-917349390ab4)
+
+- Click `_SECURITY_GROUPS`
+- Right click inside folder and choose `New` --> `Group`
+
+![Screen Shot 2023-12-25 at 8 42 27 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/b7b0940e-4c5a-4e83-ad75-7fc552972812)
+
+- Set `Group name` to "ACCOUNTANTS"
+- `Group type` as "Security"
 - Click `OK`
 
->**Note***
->_By Double-Clicking the Group you can add users by selecting the `Members` tab then selecting `Add`_
+![Screen Shot 2023-12-25 at 8 44 10 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/de544c2f-af0c-4992-b01f-c480945a4b52)
 
- ![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/a501897e-5d69-4382-ae27-d4ea1b488056)
+![Screen Shot 2023-12-25 at 8 45 22 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/33b17671-4ed3-4be6-ad05-678e5d3bb363)
 
 - Return to `File Explorer`
 - Select `accounting` folder
-- Select `Properties`
-- Select `Share`
-- Type **ACCOUNTANTS**
-- Select `Add`
-- Set `Permission Level` to **Read/Write**
+- Right click and select `Properties`
+
+![Screen Shot 2023-12-25 at 8 47 37 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/7543f153-abf7-42d1-b9c0-7e9884931eba)
+
 - Select `Share`
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/2f28d281-c994-4cfd-a13b-3940c978081a)
+![Screen Shot 2023-12-25 at 8 48 59 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/15b5383a-e4b1-4ca3-8541-3b853bcf707d)
+
+- Type "ACCOUNTANTS"
+- Select `Add`
+- Set `Permission Level` to "Read/Write"
+- Select `Share`
+
+![Screen Shot 2023-12-25 at 8 52 05 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/dbfb18aa-b983-4fb3-b261-6b735c0bd0de)
 
 <h2>Changing User's Permissions</h2>
 
 - Return to Client-01
+- Go back to your File Explorer
+- Type in "\\dc-1 at the top
 - Attempt to access the `accounting` folder
-- Observe that the user does not have permission to access the folder
+- Observe that the user does not have permission to access the folder (due to the fact that "dox.kena" is not in that security group, we just simply won't have access to it)
 
-![image](https://github.com/CarlosAlvarado0718/Network-F-P/assets/140138198/cefdd339-cf8d-4b04-a1f3-233bf17ae16c)
+![Screen Shot 2023-12-25 at 8 54 45 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/f9e0b583-306d-4972-aa71-c49b827effa3)
 
 - Return to DC-1
 - Select `Properties` of the `ACCOUNTANTS` group
