@@ -57,11 +57,11 @@ What are file shares? - File shares are basically folders on your desktop but in
 
 ![Screen Shot 2023-12-25 at 6 13 49 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/1d9167ba-9037-4f9f-bf68-3e08a04c8db5)
 
-- Log into Client-01 with your user of choice
+- Log into Client-01 with your user of choice for your second connection & while that is booting up...
 
 ![Screen Shot 2023-12-25 at 6 16 02 PM](https://github.com/Emq17/Network-File-Shares-And-Permissions/assets/147126755/3b0bc7ed-d035-4917-8365-ad5a52659c98)
 
-- Return to DC-1
+- Return back to DC-1 (jane_admin) on your other remote connection
 - Open `File Explorer`
 - Select `This PC`
 - Select `Windows (C;)`
