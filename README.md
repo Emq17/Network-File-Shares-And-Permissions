@@ -104,7 +104,7 @@ What are file shares? - File shares are basically folders on your desktop but in
 
 <h2>Attempting to Access File Shares as a Normal User</h2>
 
-- Return to Client-1's remote desktop connection
+- Return to your Client-1's user of choice (dox.kena) remote desktop connection
 - Open `File Explorer`
 - Type "\\\dc-1" into Search Bar up top
 
